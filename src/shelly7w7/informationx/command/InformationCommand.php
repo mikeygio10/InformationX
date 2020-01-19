@@ -17,7 +17,7 @@ class InformationCommand extends PluginCommand{
         parent::__construct($name, $plugin);
         $this->plugin = $plugin;        
         $this->setAliases($this->plugin->config->get("aliases"));
-        $this->setDescription("See yours and servers information!");
+        $this->setDescription("See info on a player");
     }
 
     public function execute(CommandSender $sender, string $commandLabel, array $args)
